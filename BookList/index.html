@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mike's Booklist</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <script
+      src="https://kit.fontawesome.com/6396900c7f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="display-4 text-center">
+        <i class="fas fa-book-open text-danger"></i> Mike's
+        <span class="text-danger">Bootstrap</span>
+        Books
+      </h1>
+      <form id="book-form">
+          <div class="form-group">
+              <label for="title">title</label>
+              <input type="text" id="title" class="form-control">
+              <label></label>
+          </div>
+          <div class="form-group">
+            <label for="author">author</label>
+            <input type="text" id="author" class="form-control">
+            <label></label>
+        </div>
+        <div class="form-group">
+            <label for="isbn">ISBN#</label>
+            <input type="text" id="isbn" class="form-control">
+            <label></label>
+        </div>
+        <input type="submit" class="btn btn-danger btn-block"/>
+      </form>
+      <table class="table table-striped mt-5">
+          <thead>
+              <tr>
+                  <th>Title</th>
+                  <th>Author</th>
+                  <th>ISBN#</th>
+                  <th></th>
+              </tr>
+          </thead>
+          <tbody id="book-list"></tbody>
+      </table>
+    </div>
+
+    <script src="app.js" async defer></script>
+  </body>
+</html>
